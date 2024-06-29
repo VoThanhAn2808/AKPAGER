@@ -593,10 +593,81 @@ height: 74vh;
 .company li,
 .contact li {
     color: var(--textfooter-color);
+    list-style: none;
+}
+
+.resources ul,
+.quicklink ul,
+.company ul,
+.contact ul {
+    padding-top: 35px;
+}
+
+.btnfb,
+.btntw,
+.btnlink,
+.btnig {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    border: none;
+}
+
+.btntw,
+.btnlink,
+.btnig {
+    background-color: var(--btn-color);
+    color: var(--btnicon-color);
+}
+
+.btnfb{
+    background-color: var(--buledark-color);
+    color: var(--white-color);
+}
+
+.about,
+.resources,
+.quicklink,
+.company,
+.contact {
+    margin-top: -40px;
+}
+
+.about p {
+    padding-top: 40px;
 }
 
 .span-linefooter {
-    display: block;
-    border-bottom: 1px solid red;
-    width: 100%;
+    flex: 1; 
+    height: 1px; 
+    background-color: var(--span-color);
+}
+
+.footer_footer {
+    padding-top: 30px;
+}
+
+.if_footer {
+    display: flex;
+}
+
+.if_footer li{
+    list-style: none;
+    padding: 0 10px;
+}
+
+.box_span {
+    display: flex;
+    align-items: center; 
+    margin-top: 80px;
+}
+
+.boxspan {
+    height: 60px;
+    width: 60px;
+    background-color: bisque;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

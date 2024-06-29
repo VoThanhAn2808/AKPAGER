@@ -1,0 +1,84 @@
+.row.custom-row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.row.custom-row > [class*='col-'] {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.body1, 
+.body2 {
+    padding-top: 100px;
+}
+
+.tab-title {
+    display: flex;
+    cursor: pointer;
+    justify-content: space-around;
+}
+
+.tab-title span {
+    padding: 10px 20px;
+}
+
+
+.tab-content {
+    display: none;
+    opacity: 0;
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.tab-content.slide-left {
+    transform: translateX(-100%);
+}
+
+.tab-content.slide-left.active {
+    display: block;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.tab-content.slide-down {
+    transform: translateY(-100%);
+}
+
+.tab-content.slide-down.active {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.tab-link {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.tab-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: orange;
+    transition: width 0.3s ease-out; 
+}
+
+.tab-link.active::after {
+    width: 100%; 
+}
+
+
+.tab-link:hover::after {
+    width: 100%; 
+}
+
+.span-line {
+    display: block;
+    border-bottom: 2px solid whitesmoke;
+    margin-bottom: 20px;
+    width: 100%;
+}
