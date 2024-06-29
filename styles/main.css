@@ -1,0 +1,57 @@
+
+:root {
+    --white-color: #fff;
+    ---black-color: #000;
+    --text-color: #333;
+    --buledark-color: #0055FF;
+    --mainblack-color: #001726;
+    --para-color: #696969;
+    --line-color: rgba(0, 25, 76, 0.1);
+    --milkywhite-color: #f1f1f1;
+    --gray-color:rgba(241, 245, 255, 1);
+    --blackline-color: ##00194C;
+    --mainblue-color: rgba(0, 149, 255, 1);
+    --blackdark-color: rgba(21, 31, 57, 1);
+    --textfooter-color: rgba(255, 255, 255, 0.45);
+    --span-color: rgba(255, 255, 255, 0.1);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+h1 {
+    font-size: 75px;
+    line-height: 82.5;
+}
+
+h2 {
+    font-size: 48px;
+    line-height: auto;
+}
+
+h3 {
+    font-size: 22px;
+    line-height: 32;
+}
+
+h4 {
+    font-size: 20px;
+    line-height: 30;
+}
+
+h5 {
+    font-size: 18px;
+    line-height: auto;
+}
+
+h6 {
+    font-size: 16px;
+    line-height: auto;
+}
