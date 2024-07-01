@@ -25,9 +25,23 @@
 
 
 .tab-content {
-    display: none;
-    opacity: 0;
     transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    pointer-events: none;
+}
+
+.tab-content.active {
+    opacity: 1;
+    visibility: visible;
+    position: relative;
+    z-index: 2
 }
 
 .tab-content.slide-left {
@@ -35,8 +49,6 @@
 }
 
 .tab-content.slide-left.active {
-    display: block;
-    opacity: 1;
     transform: translateX(0);
 }
 
@@ -45,8 +57,22 @@
 }
 
 .tab-content.slide-down.active {
-    display: block;
-    opacity: 1;
+    transform: translateY(0);
+}
+
+ .tab-content.slide-right {
+    transform: translateX(100%);
+}
+
+.tab-content.slide-right.active {
+    transform: translateX(0);
+}
+
+.tab-content.slide-up {
+    transform: translateY(100%);
+}
+
+.tab-content.slide-up.active {
     transform: translateY(0);
 }
 

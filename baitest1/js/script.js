@@ -1,11 +1,13 @@
 document.addEventListener('DOMContentLoaded', function() {
     var tabLinks = document.querySelectorAll('.tab-link');
-
+// console.log(tabLinks)
     tabLinks.forEach(function(tabLink) {
         tabLink.addEventListener('click', function() {
             var tabId = this.getAttribute('data-tab');
+           
             var animationType = this.getAttribute('data-animation');
             var tabContent = document.getElementById(tabId);
+            // console.log(tabContent)
 
             tabLinks.forEach(function(link) {
                 link.classList.remove('active');
