@@ -1,0 +1,18 @@
+:root {
+    --white-color: #FFFFFF;
+    --black-color: #000000;
+    --black_main-color: rgba(0, 23, 38, 1);
+    --blue_main-color: rgba(0, 149, 255, 1);
+    --yellow_main-color: rgba(254, 196, 88, 1);
+    --gray_main-color: rgba(238, 239, 251, 1);
+    --border_main-color:rgba(230, 232, 234, 1);
+    --para-color: rgba(105, 105, 105, 1);
+    --blue_dark-color: rgba(0, 85, 255, 1);
+    --line-color: rgba(0, 25, 76, 0.1);
+    --span_line-color:rgba(255, 255, 255, 0.1);
+    --gray6-color:rgba(241, 245, 255, 1);
+    --title_main-color: rgba(0, 23, 38, 1);
+    --black_light-color:rgba(0, 25, 76, 1);
+    --gray1-color:rgba(39, 53, 87, 1);
+    --yellow_main-color: rgba(254, 196, 88, 1)
+}

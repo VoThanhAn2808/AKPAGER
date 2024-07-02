@@ -7,192 +7,206 @@
     <title>Akpager</title>
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/main.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/color/color.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <script src="js/roll.js" defer></script>
 </head>
 
 <body>
     <div class="main">
         <header id="header">
-            <div id="header_header">
-                <div class="header_header_logo">
-                    <img src="img/logo/logo.png" alt="logo" class="logo">
-                    <h2>Akpager</h2>
-                </div>
+            <div id="header_header" class="pt-25">
+                <a href="index.html" rel="home" class="header_header_logo">
+                    <img src="img/logo/logo.png" alt="logo">
+                    <h2 class="white pl-10">Akpager</h2>
+                </a>
                 <div class="header_header_nav">
-                    <ul class="nav">
-                        <li><a href="#">Demos</a><i class="fas fa-chevron-down"></i></li>
-                        <li><a href="#">Pages</a><i class="fas fa-chevron-down"></i></li>
-                        <li><a href="#">Features</a></i></li>
-                        <li><a href="#">Projects</a><i class="fas fa-chevron-down"></i></li>
-                        <li><a href="#">Contact</a></li>
-                        <i class="fas fa-search"></i>
+                    <ul class="nav white">
+                        <li class="pd_lr-20"><a href="#" class="white pd_lr-7">Demos</a><i class="fas fa-chevron-down"></i></li>
+                        <li class="pd_lr-20"><a href="#" class="white pd_lr-7">Pages</a><i class="fas fa-chevron-down"></i></li>
+                        <li class="pd_lr-20"><a href="#" class="white pd_lr-7">Features</a></i></li>
+                        <li class="pd_lr-20"><a href="#" class="white pd_lr-7">Projects</a><i class="fas fa-chevron-down"></i></li>
+                        <li class="pd_lr-20"><a href="#" class="white pd_lr-7">Contact</a></li>
+                        <li class="pd_lr-20"><i class="fas fa-search"></i></li>
                     </ul>
                 </div>
                 <div class="header_header_register">
-                    <button class="button_header_register">Get Started <i class="fas fa-arrow-right"></i></button>
+                    <button class="btn_blue-dark">Get Started <i class="fas fa-arrow-right"></i></button>
                 </div>
             </div>
 
             <div id="header_content">
-                <h1 class="header_header_content">Blog Standard</h1>
-                <span class="content_header_content"> Home <i class="fas fa-chevron-right"></i> Blog Standard </span>
+                <h1 class="header_header_content white">Blog Standard</h1>
+                <h4 class="content_header_content white pt-25"> Home <i class="fas fa-chevron-right pd_lr-20"></i> Blog Standard </h4>
             </div>
         </header>
 
         <div class="custom-container">
             <div class="row">
                 <div class="col-md-7 custom-column no-padding">
-                    <div class="blog1">
-                        <img src="img/blog/ctblog1.jpg" alt="blog1" class="img-fluid fixed-height-image">
+                    <!-- blog1 -->
+                    <section class="blog1">
+                        <img src="img/blog/ctblog1.jpg" alt="blog1" class="img-fluid fixed-image">
 
-                        <div class="header_blog1">
+                        <div class="header_blog1 pt-35">
                             <h6>SEO Camping</h6>
 
-                            <div class="title_content_blog">
+                            <div class="title_content_blog pl-30">
                                 <img src="img/blog/avtblog1.jpg" alt="" class="avt_blog1" />
-                                <span class="text_title_content_blog">Matthew</span>
+                                <p class="pl-10">Matthew</p>
                             </div>
 
-                            <span class="title_time_blog">
+                            <div class="title_time_blog">
                                 <i class="far fa-calendar-alt"></i>
-                                <span>September 20, 2023</span>
-                            </span>
+                                <p class="pl-10">September 20, 2023</p>
+                            </div>
 
                         </div>
 
-                        <span class="span-line"></span>
+                        <span class="span-line w-100 pt-25"></span>
 
                         <div class="content_blog1">
-                            <h2 class="title_content">Achieving Fashion Elegant Design Runway Life</h2>
-                            <p class="para_content">Sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium
+                            <h2 class="pt-30">Achieving Fashion Elegant Design Runway Life</h2>
+                            <p class="pt-35">Sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium
                                 doloremque
                                 laudantium
                                 eaque ipsa quae abillo inventore veritatis et quasi architecto beatae</p>
                         </div>
 
-                        <a href="blog1.html"><button class="btn_black">Read More<i class="fas fa-arrow-right"></i></button></a>
+                        <a href="blog1.html"><button class="btn_blue-dark mt-40">Read More<i
+                                    class="fas fa-arrow-right"></i></button></a>
 
-                    </div>
+                    </section>
 
-                    <div class="blog2">
+                    <!-- blog2 -->
+                    <section class="blog2 fixed-image mt-50">
 
                         <div class="container_blog2">
-                            <p class="para_content_blog2">Remote work made easy way better tools Section Bonorum et
-                                Malorum</p>
+                            <h3 class="pt-40 pr-60 pl-60">Remote work made easy way better tools Section Bonorum et
+                                Malorum</h3>
                             <img src="img/blog/Group.png" alt="group" class="group">
                         </div>
 
-                        <div class="content_blog2">
-                            <h4 class="content1_blog2">Michael A. Jenkins</h4>
-                            <h6 class="content2_blog2">CEO & Founder</h6>
+                        <div class="content_blog2 pl-60">
+                            <h4>Michael A. Jenkins</h4>
+                            <p class="pt-15 pb-50">CEO & Founder</p>
                         </div>
 
-                    </div>
+                    </section>
 
-                    <div class="blog3">
-                        <img src="img/blog/ctblog1.jpg" alt="blog1" class="img-fluid fixed-height-image">
+                    <!-- blog3 -->
+                    <section class="blog3 pt-50">
+                        <img src="img/blog/ctblog3.jpg" alt="blog1" class="img-fluid fixed-image">
+
+                        <div class="header_blog1 pt-35">
+                            <h6>SEO Camping</h6>
+
+                            <div class="title_content_blog pl-30">
+                                <img src="img/blog/avtblog1.jpg" alt="" class="avt_blog1" />
+                                <p class="pl-10">Matthew</p>
+                            </div>
+
+                            <div class="title_time_blog">
+                                <i class="far fa-calendar-alt"></i>
+                                <p class="pl-10">September 20, 2023</p>
+                            </div>
+
+                        </div>
+
+                        <span class="span-line w-100 pt-25"></span>
+
+                        <div class="content_blog1">
+                            <h2 class="pt-30">Achieving Fashion Elegant Design Runway Life</h2>
+                            <p class="pt-35">Sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium
+                                doloremque
+                                laudantium
+                                eaque ipsa quae abillo inventore veritatis et quasi architecto beatae</p>
+                        </div>
+
+                        <a href="blog1.html"><button class="btn_black mt-40">Read More<i
+                                    class="fas fa-arrow-right"></i></button></a>
+
+                    </section>
+
+                    <!-- blog4 -->
+                    <section class="blog4 fixed-image mt-50">
+
+                        <div class="container_blog4">
+                            <h3 class="pt-40 pl-60">Remote work made easy way better Section
+                                Finibus Bonorum et Malorum" Cicero</h3>
+                            <img src="img/blog/Group2.png" alt="group" class="group4">
+                        </div>
+
+                        <div class="content_blog4 pl-60">
+                            <h4>Michael A. Jenkins</h4>
+                            <p>CEO & Founder</p>
+                        </div>
+
+                    </section>
+
+                    <!-- blog5 -->
+                    <section class="blog3">
+                        <img src="img/blog/ctblog5.jpg" alt="blog1" class="img-fluid fixed-image">
 
                         <div class="header_blog1">
                             <h6>SEO Camping</h6>
 
                             <div class="title_content_blog">
                                 <img src="img/blog/avtblog1.jpg" alt="" class="avt_blog1" />
-                                <span class="text_title_content_blog">Matthew</span>
+                                <p>Matthew</p>
                             </div>
 
-                            <span class="title_time_blog">
+                            <div class="title_time_blog">
                                 <i class="far fa-calendar-alt"></i>
-                                <span>September 20, 2023</span>
-                            </span>
-
-                        </div>
-
-                        <span class="span-line"></span>
-
-                        <div class="content_blog1">
-                            <h2 class="title_content">Achieving Fashion Elegant Design Runway Life</h2>
-                            <p class="para_content">Sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium
-                                doloremque
-                                laudantium
-                                eaque ipsa quae abillo inventore veritatis et quasi architecto beatae</p>
-                        </div>
-
-                        <button class="btn_black">Read More<i class="fas fa-arrow-right"></i></button>
-
-                    </div>
-
-                    <div class="blog2">
-
-                        <div class="container_blog2">
-                            <p class="para_content_blog2">Remote work made easy way better tools Section Bonorum et
-                                Malorum</p>
-                            <img src="img/blog/Group.png" alt="group" class="group">
-                        </div>
-
-                        <div class="content_blog2">
-                            <h4 class="content1_blog2">Michael A. Jenkins</h4>
-                            <h6 class="content2_blog2">CEO & Founder</h6>
-                        </div>
-
-                    </div>
-
-                    <div class="blog3">
-                        <img src="img/blog/ctblog1.jpg" alt="blog1" class="img-fluid fixed-height-image">
-
-                        <div class="header_blog1">
-                            <h6>SEO Camping</h6>
-
-                            <div class="title_content_blog">
-                                <img src="img/blog/avtblog1.jpg" alt="" class="avt_blog1" />
-                                <span class="text_title_content_blog">Matthew</span>
+                                <p>September 20, 2023</p>
                             </div>
 
-                            <span class="title_time_blog">
-                                <i class="far fa-calendar-alt"></i>
-                                <span>September 20, 2023</span>
-                            </span>
-
                         </div>
 
-                        <span class="span-line"></span>
+                        <span class="span-line w-100"></span>
 
                         <div class="content_blog1">
-                            <h2 class="title_content">Achieving Fashion Elegant Design Runway Life</h2>
-                            <p class="para_content">Sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium
-                                doloremque
-                                laudantium
-                                eaque ipsa quae abillo inventore veritatis et quasi architecto beatae</p>
+                            <h2>Achieving Fashion Elegant Design Runway Life</h2>
+                            <p>Sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium
+                                doloremque laudantium eaque ipsa quae abillo inventore veritatis et quasi architecto
+                                beatae
+                            </p>
                         </div>
 
-                        <button class="btn_black">Read More<i class="fas fa-arrow-right"></i></button>
+                        <a href="blog1.html"><button class="btn_black">Read More<i
+                                    class="fas fa-arrow-right"></i></button></a>
 
-                    </div>
+                    </section>
 
-                    <div class="page">
+                    <section class="page">
 
                         <i class="fas fa-chevron-left"></i>
-              
-                        <div class="btn_ft">
-                          <button class="btn_ft_blog">1</button>
-                          <button class="btn_ft_blog">2</button>
-                          <button class="btn_ft_blog">3</button>
-                          <button class="btn_ft_blog">4</button>
+
+                        <div class="btn">
+                            <button class="btn_round h-45 w-45 bg_white">
+                                <h4>1</h4>
+                            </button>
+                            <button class="btn_round h-45 w-45 bg_white">
+                                <h4>2</h4>
+                            </button>
+                            <button class="btn_round h-45 w-45 bg_white">
+                                <h4>3</h4>
+                            </button>
+                            <button class="btn_round h-45 w-45 bg_white">
+                                <h4>4</h4>
+                            </button>
                         </div>
-              
+
                         <i class="fas fa-chevron-right"></i>
-                      </div>
+                    </section>
 
                 </div>
                 <div class="col-md-4 offset-md-1 custom-column no-padding">
 
-                    <div class="search">
+                    <section class="search">
 
-                        <h3 class="text_search">Search</h3>
+                        <h3>Search</h3>
 
                         <form class="search-form">
                             <div class="input_container">
@@ -201,184 +215,201 @@
                             </div>
                         </form>
 
-                    </div>
+                    </section>
 
-                    <div class="category">
+                    <section class="category w-100">
 
-                        <h3 class="text_category">Category</h3>
+                        <h3>Category</h3>
 
                         <ul class="category_list">
-                            <li><a href="">Digital Marketing</a><i class="fas fa-long-arrow-alt-right"></i></li>
-                            <li><a href="">SEO optimization</a><i class="fas fa-long-arrow-alt-right"></i></li>
-                            <li><a href="">Content Marketing</a><i class="fas fa-long-arrow-alt-right"></i></li>
-                            <li><a href="">Keywords Research</a><i class="fas fa-long-arrow-alt-right"></i></li>
-                            <li><a href="">Technical Adult</a><i class="fas fa-long-arrow-alt-right"></i></li>
+                            <li>
+                                <h6>Digital Marketing</h6><i class="fas fa-long-arrow-alt-right"></i>
+                            </li>
+                            <li>
+                                <h6>SEO optimization</h6><i class="fas fa-long-arrow-alt-right"></i>
+                            </li>
+                            <li>
+                                <h6>Content Marketing</h6><i class="fas fa-long-arrow-alt-right"></i>
+                            </li>
+                            <li>
+                                <h6>Keywords Research</h6><i class="fas fa-long-arrow-alt-right"></i>
+                            </li>
+                            <li>
+                                <h6>Technical Adult</h6><i class="fas fa-long-arrow-alt-right"></i>
+                            </li>
                         </ul>
-                    </div>
+                    </section>
 
-                    <div class="recent_news">
+                    <section class="recent_news">
 
-                        <h3 class="text_recent_news">Recent News</h3>
+                        <h3>Recent News</h3>
                         <!-- recent1 -->
-                        <div class="content_recent1">
-                            <img src="img/sidebar/recent1.jpg" alt="recent1" class="recent1">
+                        <div class="content_recent1 row">
+                            <img src="img/sidebar/recent1.png" alt="recent1" class="recent1 fixed-image col-md-4">
 
-                            <div class="content1_content_recent1">
-                                <span class="time_recent1">
-                                    September 20, 2023
-                                </span>
-                                <span class="span-line1"></span>
-                                <p class="para_recent1">Achieving Fashion Elegant se
-                                    Runway to Real Life</p>
+                            <div class="content_content_recent1 col-md-7">
+                                <p>September 20, 2023</p>
+                                <span class="span-line"></span>
+                                <h5>Achieving Fashion Elegant se
+                                    Runway to Real Life</h5>
                             </div>
 
                         </div>
-                        <!-- recent1 -->
-                        <div class="content_recent1">
-                            <img src="img/sidebar/recent1.jpg" alt="recent1" class="recent1">
+                        <!-- recent2 -->
+                        <div class="content_recent2 row">
+                            <img src="img/sidebar/recent2.png" alt="recent1" class="recent1 fixed-image col-md-4">
 
-                            <div class="content1_content_recent1">
-                                <span class="time_recent1">
-                                    September 20, 2023
-                                </span>
-                                <span class="span-line1"></span>
-                                <p class="para_recent1">Achieving Fashion Elegant se
-                                    Runway to Real Life</p>
+                            <div class="content_content_recent2 col-md-7">
+                                <p>September 20, 2023</p>
+                                <span class="span-line"></span>
+                                <h5>Achieving Fashion Elegant se
+                                    Runway to Real Life</h5>
                             </div>
 
                         </div>
-                        <!-- recent1 -->
-                        <div class="content_recent1">
-                            <img src="img/sidebar/recent1.jpg" alt="recent1" class="recent1">
+                        <!-- recent3 -->
+                        <div class="content_recent3 row">
+                            <img src="img/sidebar/recent3.png" alt="recent1" class="recent1 fixed-image col-md-4">
 
-                            <div class="content1_content_recent1">
-                                <span class="time_recent1">
-                                    September 20, 2023
-                                </span>
-                                <span class="span-line1"></span>
-                                <p class="para_recent1">Achieving Fashion Elegant se
-                                    Runway to Real Life</p>
+                            <div class="content_content_recent3 col-md-7">
+                                <p>September 20, 2023</p>
+                                <span class="span-line"></span>
+                                <h5>Achieving Fashion Elegant se
+                                    Runway to Real Life</h5>
                             </div>
 
                         </div>
 
-                    </div>
+                    </section>
 
-                    <div class="tag">
-                        <h3 class="text_tag">Popular Tags</h3>
+                    <section class="tag">
+                        <h3>Popular Tags</h3>
 
-                        <div class="button_tag">
-                            <button class="button1_tag">Marketing</button>
-                            <button class="button2_tag">Product</button>
-                            <button class="button3_tag">Social Media</button>
-                            <button class="button4_tag">SEO Optimize</button>
-                            <button class="button5_tag">Content</button>
-                            <button class="button6_tag">Design</button>
+                        <div class="content_tag">
+                            <button class="btn_tag">
+                                <h6>Marketing</h6>
+                            </button>
+                            <button class="btn_tag">
+                                <h6>Product</h6>
+                            </button>
+                            <button class="btn_tag">
+                                <h6>Social Media</h6>
+                            </button>
+                            <button class="btn_tag">
+                                <h6>SEO Optimize</h6>
+                            </button>
+                            <button class="btn_tag">
+                                <h6>Content</h6>
+                            </button>
+                            <button class="btn_tag">
+                                <h6>Design</h6>
+                            </button>
                         </div>
 
-                    </div>
+                    </section>
 
-                    <div class="banner">
+                    <section class="banner">
                         <div class="container_banner">
-                            <span class="text_banner">Boost your <br> Digital<br> Product <br> marketing?</span>
-                            <button class="button_banner">Get A Quote<i class="fas fa-arrow-right"></i> </button>
+                            <h3>Boost your <br> Digital<br> Product <br> marketing ?</h3>
+                            <button class="btn_blue">Get A Quote<i class="fas fa-arrow-right"></i> </button>
                         </div>
-                        <img src="img/sidebar/banner.png" alt="banner" class="imgbanner">
+                        <img src="img/sidebar/banner.png" alt="banner" class="img_banner">
                         <img src="img/sidebar/Frame.png" alt="frame" class="frame1">
                         <img src="img/sidebar/Frame1.png" alt="frame" class="frame2">
-                    </div>
+                    </section>
 
                 </div>
             </div>
         </div>
+        <!-- footer -->
         <div class="footer">
             <div id="footer" class="custom-container container_footer">
-                <div class="header_footer">
-                    <div class="row no-padding header_footer_content header_footer">
-                        <div class="col-md-4">
-                            <div class="logo_footer">
-                                <img src="img/logo/logo2.png" alt="logo2" class="logo2">
-                                <h1>Akpager</h1>
-                            </div>
-                            <span class="text_header_footer_logo">Digital Business Consulting Agency</span>
+                <!-- CTA -->
+                <section class="row no-padding CTA footer_CTA fixed-image">
+                    <div class="col-md-4 footer_logo-CTA">
+                        <div class="logo_footer">
+                            <img src="img/logo/logo2.png" alt="logo2">
+                            <h2 class="white">Akpager</h2>
                         </div>
-                        <div class="col-md-6 offset-md-2 header_footer_email">
-                            <h4>Subscribe Our Newsletter</h4>
-    
-                            <form class="form_email">
-                                <div class="input_container_email">
-                                    <input type="email" name="emal" placeholder="Email Address" class="email">
-                                    <button class="btnsg">Sign Up <i class="fas fa-arrow-right"></i></button>
-                                </div>
-                            </form>
-                        </div>
+                        <p class="white">Digital Business Consulting Agency</p>
                     </div>
-                </div>
-                <div class="row no-padding content_footer">
+                    <div class="col-md-6 offset-md-2 footer_email-CTA">
+                        <h4 class="white">Subscribe Our Newsletter</h4>
+
+                        <form class="form_email">
+                            <div class="input_container_email">
+                                <input type="email" name="emal" placeholder="Email Address" class="email">
+                                <button class="btn_black btn_footer">Sign Up <i class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+                <!-- content footer -->
+                <section class="row no-padding content_footer pt-80">
                     <div class="col-md-3 about">
-                        <h3>About Company</h3>
-                        <p>Doloremque laudantium tota aperiam <br> eaque abillo inventore architect beatae<br>
+                        <h5 class="line_height-21 white">About Company</h5>
+                        <p class="pt-40 pb-30">Doloremque laudantium tota aperiam <br> eaque abillo inventore architect beatae<br>
                             vitae dicta sunt explicabos
                         </p>
-                        <button class="btnfb"><i class="fab fa-facebook-f"></i></button>
-                        <button class="btntw"><i class="fab fa-twitter"></i></button>
-                        <button class="btnlink"><i class="fab fa-linkedin-in"></i></button>
-                        <button class="btnig"><i class="fab fa-instagram"></i></button>
+                        <button class="btn_round h-40 w-40 bg_gray1 para"><i class="fab fa-facebook-f"></i></button>
+                        <button class="btn_round h-40 w-40 bg_gray1 para"><i class="fab fa-twitter"></i></button>
+                        <button class="btn_round h-40 w-40 bg_gray1 para"><i class="fab fa-linkedin-in"></i></button>
+                        <button class="btn_round h-40 w-40 bg_gray1 para"><i class="fab fa-instagram"></i></button>
                     </div>
                     <div class="col-md-2 resources">
-                        <h3>Resources</h3>
-                        <ul>
-                            <li>Product</li>
-                            <li>Services</li>
-                            <li>About Us</li>
-                            <li>Benefits</li>
+                        <h5 class="line_height-21 white">Resources</h5>
+                        <ul class="pt-40">
+                            <li class="para">Product</li>
+                            <li class="pt-10 para">Services</li>
+                            <li class="pt-10 para">About Us</li>
+                            <li class="pt-10 para">Benefits</li>
                         </ul>
                     </div>
                     <div class="col-md-2 quicklink">
-                        <h3>Quick Link</h3>
-                        <ul>
-                            <li>Features</li>
-                            <li>Pricing Plan</li>
-                            <li>Best Program</li>
-                            <li>Press Kit</li>
+                        <h5 class="line_height-21 white">Quick Link</h5>
+                        <ul class="pt-40">
+                            <li class="para">Features</li>
+                            <li class="pt-10 para">Pricing Plan</li>
+                            <li class="pt-10 para">Best Program</li>
+                            <li class="pt-10 para">Press Kit</li>
                         </ul>
                     </div>
                     <div class="col-md-2 company">
-                        <h3>Company</h3>
-                        <ul>
-                            <li>About</li>
-                            <li>Team Member</li>
-                            <li>Reviews</li>
-                            <li>Latest News</li>
+                        <h5 class="line_height-21 white">Company</h5>
+                        <ul class="pt-40">
+                            <li class="para">About</li>
+                            <li class="pt-10 para">Team Member</li>
+                            <li class="pt-10 para">Reviews</li>
+                            <li class="pt-10 para">Latest News</li>
                         </ul>
                     </div>
                     <div class="col-md-3 contact">
-                        <h3>Contact</h3>
-                        <ul>
-                            <li><img src="icon/location.png" alt="" class="imglocation">55 Main Street, 2nd block Melbourne, Australia
+                        <h5 class="line_height-21 white">Contact</h5>
+                        <ul class="pt-40">
+                            <li class="para"><img src="icon/location.png" alt="" class="pr-15">55 Main Street, 2nd block Melbourne, Australia
                             </li>
-                            <li><i class="far fa-envelope"></i> support@gmail.com</li>
-                            <li><img src="icon/phone.png" alt="" class="imgphone"> +000 (123) 44 55</li>
+                            <li class="pt-10 para"><i class="far fa-envelope pr-15"></i> support@gmail.com</li>
+                            <li class="pt-10 para"><img src="icon/phone.png" alt="" class="pr-15"> +000 (123) 44 55</li>
                         </ul>
                     </div>
-                </div>
+                </section>
                 <div class="box_span">
-                    <span class="span-linefooter"></span>
-                    <div class="boxspan">
+                    <span class="span_line-footer"></span>
+                    <div class="boxspan h-60 w-60 boder_radius-20 bg_yellow">
                         <img src="icon/angle-double-up.png" alt="" class="doubleup">
                     </div>
-                    <span class="span-linefooter"></span>
+                    <span class="span_line-footer"></span>
                 </div>
                 <div class="footer_footer row">
                     <div class="col-md-4 ">
-                        <h6>Copyright @2023, Akpager All Rights Reserved</h6>
+                        <h6 class="white">Copyright @2023, Akpager All Rights Reserved</h6>
                     </div>
                     <div class="col-md-3 offset-md-5">
-                        <ul class="if_footer">
-                            <li>Faps</li>
-                            <li>Setting</li>
-                            <li>Privacy</li>
-                            <li>Contact</li>
+                        <ul class="if_footer white">
+                            <li class="pd_lr-10">Faps</li>
+                            <li class="pd_lr-10">Setting</li>
+                            <li class="pd_lr-10">Privacy</li>
+                            <li class="pd_lr-10">Contact</li>
                         </ul>
                     </div>
                 </div>
