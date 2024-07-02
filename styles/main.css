@@ -312,6 +312,10 @@ button {
     height: 60px;
 }
 
+.h-65 {
+    height: 65px;
+}
+
 .w-40 {
     width: 40px;
 }
@@ -324,7 +328,15 @@ button {
     width: 60px;
 }
 
+.w-410 {
+    width: 410px;
+}
+
 /* margin padding */
+.mt-25 {
+    margin-top: 25px;
+}
+
 .mt-30 {
     margin-top: 30px;
 }
@@ -335,6 +347,14 @@ button {
 
 .mt-50 {
     margin-top: 50px;
+}
+
+.mt-70 {
+    margin-top: 70px;
+}
+
+.mt-80 {
+    margin-top: 80px;
 }
 
 .pd_lr-7 {
@@ -356,6 +376,10 @@ button {
 
 .pt-15 {
     padding-top: 15px;
+}
+
+.pt-20 {
+    padding-top: 20px;
 }
 
 .pt-25 {
