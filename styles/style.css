@@ -23,6 +23,45 @@
   font-weight: 900;
 }
 
+/* subnav */
+
+.header_header_nav .nav > li {
+  position: relative;
+  display: inline-block;
+}
+
+.header_header_nav .nav > li .submenu {
+  display: none;
+  position: absolute;
+  /* top: 100%; */
+  /* left: 0; */
+  background-color: #fff; /* Màu nền của menu con */
+  /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); Hiệu ứng bóng đổ */
+  z-index: 1000;
+  /* padding: 0; */
+  /* margin: 0; */
+  /* min-width: 150px; Chiều rộng tối thiểu của menu con */
+}
+
+.header_header_nav .nav > li .submenu li {
+  padding: 10px;
+}
+
+.header_header_nav .nav > li .submenu li a {
+  color: #000; /* Màu chữ của các liên kết trong menu con */
+  /* text-decoration: none; */
+  /* display: block; */
+}
+
+.header_header_nav .nav > li .submenu li a:hover {
+  background-color: #f0f0f0; /* Màu nền khi hover vào các mục trong menu con */
+}
+
+.header_header_nav .nav > li:hover .submenu {
+  display: block; /* Hiển thị menu con khi hover vào mục cha */
+}
+/* -- */
+
 .header_header_nav .nav a {
   font-size: 18px;
   font-weight: 600;
@@ -35,14 +74,15 @@
   transform: translate(-50%, -50%);
 }
 
-.header_header_content {
+#header_content h1 {
   font-size: 75px;
 }
 
-.content_header_content {
+#header_content h4 {
   font-weight: 500;
   display: flex;
   justify-content: center;
+  cursor: pointer;
 }
 
 .avt_blog1 {
@@ -207,7 +247,7 @@
 /* CTA */
 
 .container_footer {
-    transform: translateY(-70px);
+    transform: translateY(-10%);
 }
 
 .CTA {
@@ -241,6 +281,7 @@
 .box_span {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .icon_boxspan {
