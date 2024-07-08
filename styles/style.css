@@ -30,37 +30,22 @@
   display: inline-block;
 }
 
-.header_header_nav .nav > li .submenu {
-  display: none;
-  position: absolute;
-  /* top: 100%; */
-  /* left: 0; */
-  background-color: #fff; /* Màu nền của menu con */
-  /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); Hiệu ứng bóng đổ */
-  z-index: 1000;
-  /* padding: 0; */
-  /* margin: 0; */
-  /* min-width: 150px; Chiều rộng tối thiểu của menu con */
-}
-
 .header_header_nav .nav > li .submenu li {
   padding: 10px;
 }
 
 .header_header_nav .nav > li .submenu li a {
-  color: #000; /* Màu chữ của các liên kết trong menu con */
-  /* text-decoration: none; */
-  /* display: block; */
+  color: #000; 
 }
 
 .header_header_nav .nav > li .submenu li a:hover {
-  background-color: #f0f0f0; /* Màu nền khi hover vào các mục trong menu con */
+  background-color: #f0f0f0; 
 }
 
 .header_header_nav .nav > li:hover .submenu {
-  display: block; /* Hiển thị menu con khi hover vào mục cha */
+  display: block; 
 }
-/* -- */
+
 
 .header_header_nav .nav a {
   font-size: 18px;

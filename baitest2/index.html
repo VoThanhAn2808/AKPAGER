@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Math</title>
+</head>
+<body>
+    <header></header>
+
+    <body class="body">
+        <div class="mulch-area">
+            <p>Mulch Area :</p>
+            <select name="area" id="mulch-area" class="mulch">
+                <option value="select">Select</option>
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+                <option value="option4">Option 4</option>
+            </select>
+        </div>
+        
+        <div class="side">
+            <p>Side Length = </p>
+            <input type="number" id="side-length" class="text_number">
+            <select name="side-unit" id="side-unit" class="side-area">
+                <option value="in">in</option>
+                <option value="ft">ft</option>
+                <option value="cm">cm</option>
+                <option value="m">m</option>
+            </select>
+        </div>
+        
+        <div class="depth">
+            <p>Depth =</p>
+            <input type="number" id="depth" class="text_number">
+            <select name="depth-unit" id="depth-unit" class="depth-area">
+                <option value="in">in</option>
+                <option value="ft">ft</option>
+                <option value="yd">yd</option>
+                <option value="cm">cm</option>
+                <option value="m">m</option>
+            </select>
+        </div>
+
+        <div class="container">
+            <div class="btn-container">
+                <button class="btn-1" onclick="clearInputs()">Clear</button>
+                <button class="btn-2" onclick="calculate()">Calculate</button>
+            </div>
+        </div>
+
+        <div class="answer">
+            <h2>Answer</h2>
+            <p>Cubic yards = <span id="cubic-yards">-</span></p>
+            <p>Cubic feet = <span id="cubic-feet">-</span></p>
+            <p>Cubic meters = <span id="cubic-meters">-</span></p>
+        </div>
+    </body>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

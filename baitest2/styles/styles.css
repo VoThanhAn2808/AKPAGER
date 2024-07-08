@@ -1,0 +1,66 @@
+
+.mulch-area,
+.money,
+.side,
+.depth {
+    display: flex;
+    align-items: center;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header,
+.container,
+.answer {
+    width: 500px;
+}
+
+.mulch-area p,
+.side p,
+.depth p  {
+    font-size: 22px;
+    margin-right: 20px;
+}
+
+.side-area,
+.depth-area {
+    font-size: 22px;
+}
+
+.text_number {
+    font-size: 22px;
+    width: 100px;
+    margin-right: 20px;
+}
+
+.depth {
+    padding-left: 53px;
+}
+
+.mulch-area {
+    padding-left: 10px;
+}
+
+.mulch {
+    font-size: 22px;
+    width: 180px;
+}
+
+.btn-1,
+.btn-2 {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.btn-2 {
+    margin-left: 235px;
+}
+
+.answer {
+    font-size: 20px;
+}

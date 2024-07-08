@@ -2,21 +2,21 @@ window.onscroll = function() { myFunction() };
 
 var header = document.getElementById("header_header");
 var sticky = header.offsetTop;
-var isSticky = false; // Trạng thái để theo dõi nếu header đã sticky
+var isSticky = false;
 
 function myFunction() {
     if (window.pageYOffset > sticky && !isSticky) {
         header.classList.add("sticky");
         setTimeout(function() {
             header.classList.add("sticky-visible");
-        }, 100); // Thời gian chờ trước khi phần tử bắt đầu di chuyển xuống
-        isSticky = true; // Đặt trạng thái là sticky
+        }, 100);
+        isSticky = true;
     } else if (window.pageYOffset <= sticky && isSticky) {
         header.classList.remove("sticky-visible");
         setTimeout(function() {
             header.classList.remove("sticky");
-        }, 500); // Phải khớp với thời gian chuyển đổi trong CSS
-        isSticky = false; // Đặt lại trạng thái không sticky
+        }, 100); 
+        isSticky = false;
     }
 }
 
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var boxSpan = document.querySelector(".box_span");
 
     boxSpan.addEventListener("click", function() {
-        smoothScrollToTop(2000); // Thời gian di chuyển là 2000ms (2 giây)
+        smoothScrollToTop(2000);
     });
 
     function smoothScrollToTop(duration) {
