@@ -15,14 +15,14 @@ function myFunction() {
         header.classList.remove("sticky-visible");
         setTimeout(function() {
             header.classList.remove("sticky");
-        }, 100); 
+        }, 200); 
         isSticky = false;
     }
 }
 
 
 document.addEventListener("DOMContentLoaded", function() {
-    var boxSpan = document.querySelector(".box_span");
+    var boxSpan = document.querySelector(".icon_boxspan");
 
     boxSpan.addEventListener("click", function() {
         smoothScrollToTop(2000);

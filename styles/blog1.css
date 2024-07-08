@@ -1,3 +1,5 @@
+
+/* Header */
 #header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url(../img/logo/background.jpg);
@@ -9,9 +11,10 @@
   justify-content: space-between;
 }
 
-.header_header_logo {
+.header_header_logo a {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .header_header_logo h2 {
@@ -59,10 +62,6 @@
 .title_time_header_content,
 .title_header_content {
   display: flex;
-}
-
-.content_details p {
-  line-height: 30px;
 }
 
 .header_quote {
@@ -154,21 +153,15 @@
   line-height: 32px;
 }
 
-/* .fullname_form:active,
-.phone_form:active,
-.email_form:active,
-.comment_form:active,
-.fullname_form:focus,
-.phone_form:focus,
-.email_form:focus,
-.comment_form:focus {
-    outline: none;
-}   */
-
-/* .btn_form:active,
-.btn_form:focus {
-    outline: none; 
-} */
+.comment_form {
+  resize: vertical;
+  overflow: auto;
+  height: auto;
+  min-height: 10px;
+  background-color: var(--white-color);
+  padding-left: 25px;
+  border-radius: 10px;
+}
 
 /* sidebar */
 
@@ -196,6 +189,11 @@
 .category_list li {
   display: flex;
   justify-content: space-between;
+}
+
+.category_list li:hover h6 {
+  color: var(--blue_main-color);
+  padding-left: 10px;
 }
 
 .category_list h6 {
@@ -298,4 +296,5 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
