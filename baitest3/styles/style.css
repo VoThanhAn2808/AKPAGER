@@ -1,0 +1,69 @@
+@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.body {
+    background-color: rgba(255, 239, 234, 1);
+}
+
+.content {
+    padding: 60px;
+}
+
+.content-body {
+    list-style-type: none;
+    padding: 0;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.toggle-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-content {
+    display: flex;
+    align-items: center;
+}
+
+.span-line {
+    display: inline-block;
+    width: 5px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: black;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+}
+
+.span-line.active {
+    background-color: orange; 
+}
+
+.toggle-icon {
+    margin-left: auto; 
+    transition: transform 0.3s;
+}
+
+.toggle-icon.active {
+    transform: rotate(180deg); 
+}
+
+.hidden {
+    display: none;
+}
+
+.span_width-line {
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    background-color: wheat;
+}

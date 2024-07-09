@@ -1,4 +1,4 @@
-/**
+/* *
   * Name: Akpager
   * Version: 1.0
   * Author: Võ Thành An
@@ -6,16 +6,41 @@
 */
 
 /* @import url("font-awesome.css"); */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
 @import url("https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css");
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"); */
 
-/* Reset */
+
+/**
+  * Reset
+  * Repeatable Patterns    
+  *	Header 
+  *	Page Title
+  * Blog
+  * Blog v.1
+  * Blog Single  
+  * Widgets  
+  * widget search
+  * widget latest posts
+  * widget tag
+  * flat-socials 
+  * Switcher
+  * GoTop Button
+  * Footer
+  * Footer widget  
+  * Bottom
+  * Parallax
+  * Boxed
+  * Revolution Slider  
+*/
+
+/* Reset
+-------------------------------------------------------------- */
 html {
     overflow-y: scroll;
     -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
+       -ms-text-size-adjust: 100%;
 }
 
 body {
@@ -150,6 +175,8 @@ ul,
 li {
     list-style: none;
 }
+
+
 
 ul.nav li:hover,
 ul.nav li:hover a,
