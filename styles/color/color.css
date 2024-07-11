@@ -17,3 +17,15 @@
   --yellow_main-color: rgba(254, 196, 88, 1);
   --black5-color: rgba(21, 31, 57, 1)
 }
+
+.bgc-lighter {
+  background-color: rgba(241, 245, 255, 1);
+}
+
+.bgc-primary {
+  background-color: rgba(0, 85, 255, 1);
+}
+
+.text-white {
+  color: #ffffff !important;
+}
