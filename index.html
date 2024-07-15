@@ -4,17 +4,21 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Akpager</title>
+    <title>Blog Standard</title>
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/color/color.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <script src="js/roll.js" defer></script>
+    <link rel="stylesheet" href="styles/responsive.css">
 </head>
 
 <body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="custom-loader"></div>
+    </div>
     <!-- Header -->
-    <header id="header" class="header styles1">
+    <div id="header" class="header styles1">
         <div class="header-inner">
             <div id="logo" class="logo">
                 <a href="index.html" rel="home">
@@ -69,10 +73,10 @@
                             <i class="fas fa-chevron-down"></i>
                             <ul class="submenu">
                                 <li><a href="index.html">About Us</a></li>
-                                <li><a href="index.html">faqs</a></li>
+                                <li><a href="index.html">Faqs</a></li>
                                 <li><a href="index.html">Team Members</a></li>
                                 <li><a href="index.html">Pricing Plan</a></li>
-                                <li><a href="index.html">Contact us</a></li>
+                                <li><a href="contact.html">Contact us</a></li>
                                 <li><a href="index.html">Sign In</a></li>
                                 <li><a href="index.html">Sign Up</a></li>
                                 <li><a href="index.html">Coming Soon</a></li>
@@ -130,9 +134,9 @@
                 </div>
             </div>
         </div><!--/.page banner-->
-    </header><!--/.header-->
+    </div><!--/.header-->
 
-    <!-- body -->
+    <!-- Body -->
     <div class="blog-standard">
         <div class="container custom-container">
             <div class="row custom-column">
@@ -565,6 +569,7 @@
             </div><!--/.footer bottom-->
         </div>
     </div><!--/.footer-->
+    <script src="js/script.js"></script>
 </body>
 
 </html>

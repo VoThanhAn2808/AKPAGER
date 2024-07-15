@@ -538,9 +538,27 @@ input[type="color"],
 }
 
 .header-inner {
-  padding: 30px 130px 0 130px;
+  padding: 10px 130px 0 130px;
   display: flex;
   align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: transparent;
+  transition: top 0.5s, background-color 0.5s;
+}
+
+.header-inner.scrolled {
+  background-color: rgba(21, 31, 57, 1);
+  padding-bottom: 10px;
+  opacity: 1;
+}
+
+.header-inner.hidden {
+  top: -100px;
 }
 
 .ms-lg-auto {
@@ -638,7 +656,7 @@ a.theme-btn  {
 	position: absolute;	
 	z-index: 9999;
 	left: 0; 
-	top: 100%;	
+	top: 115%;	
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
        opacity: 0;
         filter: alpha(opacity=0); 
@@ -677,7 +695,7 @@ a.theme-btn  {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 80%;
+  height: 100%;
 }
 
 .banner-page {
@@ -687,7 +705,7 @@ a.theme-btn  {
 
 .banner-inner h1 {
   color: #ffffff;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   line-height: 82.5px;
   white-space: nowrap;
   font-size: 55px;
@@ -815,7 +833,7 @@ a.theme-btn  {
   font-weight: 600;
 }
 
-.tag-coulds a:hover,
+.tag-could a:hover,
 .social-style-one a i:hover {
   color: #ffffff;
   background-color: rgba(0, 85, 255, 1);
@@ -1009,6 +1027,19 @@ a.theme-btn  {
   border: none;
   border-radius: 20px;
   padding: 15px 45px;
+  overflow: hidden;
+  background-size: 202% 202%;
+  background-image: linear-gradient(
+    to left,
+    var(--blue_dark-color) 50%,
+    var(--black_light-color) 50%
+  );
+  background-position: right;
+}
+
+.comment-form .row .form-group .theme-btn:hover {
+  background-position: left;
+  border: none;
 }
 
 .comment-form .row .form-group .theme-btn:after {
@@ -1156,8 +1187,13 @@ a.theme-btn  {
   margin-bottom: 20px;
 }
 
-.widget-banner .theme-btn {
-  background-color: rgba(0, 149, 255, 1);
+.widget-banner a.theme-btn {
+  background-image: linear-gradient(to top, var(--blue_main-color) 50%, var(--black_main-color) 50%);
+  background-position: bottom;
+}
+
+.widget-banner .theme-btn:hover {
+  background-position: top;
 }
 
 .widget-banner .icon-banner::after {
@@ -1247,6 +1283,19 @@ a.theme-btn  {
   font-size: 15px;
   font-weight: 600;
   line-height: 17.6px;
+  overflow: hidden;
+  background-size: 202% 202%;
+  background-image: linear-gradient(
+    to left,
+    var(--black_light-color) 50%,
+    var(--blue_dark-color) 50%
+  );
+  background-position: right;
+}
+
+.form-part .form-email button:hover {
+  background-position: left;
+  border: none;
 }
 
 .form-part .form-email button::after {
@@ -1392,6 +1441,10 @@ a.theme-btn  {
   top: -40px;
   display: grid;
   place-items: center;
+}
+
+.footer-bottom .scroll-top:hover {
+  background-color: rgb(255, 172, 18);
 }
 
 .scroll-top::before,

@@ -1,0 +1,166 @@
+@media only screen and (min-width: 1200px) {
+    .container {
+      max-width: 1320px;
+      padding-left: 15px;
+      padding-right: 15px; }
+      .container.container-1695 {
+        max-width: 1725px; }
+      .container.container-1660 {
+        max-width: 1690px; }
+      .container.container-1520 {
+        max-width: 1550px; }
+      .container.container-1500 {
+        max-width: 1530px; }
+      .container.container-1450 {
+        max-width: 1480px; }
+      .container.container-1370 {
+        max-width: 1400px; }
+      .container.container-1070 {
+        max-width: 1200px; } }
+  
+  @media only screen and (min-width: 576px) {
+    .container-fluid {
+      padding-left: 25px;
+      padding-right: 25px; } }
+  
+  @media only screen and (min-width: 1400px) {
+    .container-fluid {
+      padding-left: 70px;
+      padding-right: 70px; } }
+  
+  .row {
+    --bs-gutter-x: 30px; }
+  
+  .no-gap {
+    --bs-gutter-x: 0; }
+  
+  @media only screen and (min-width: 1400px) {
+    .gap-5 {
+      --bs-gutter-x: 5px; } }
+  
+  @media only screen and (min-width: 1400px) {
+    .gap-10 {
+      --bs-gutter-x: 10px; } }
+  
+  @media only screen and (min-width: 1400px) {
+    .gap-15 {
+      --bs-gutter-x: 15px; } }
+  
+  @media only screen and (min-width: 1400px) {
+    .gap-20 {
+      --bs-gutter-x: 20px; } }
+  
+  @media only screen and (min-width: 1400px) {
+    .gap-25 {
+      --bs-gutter-x: 25px; } }
+  
+  @media only screen and (min-width: 1400px) {
+    .gap-30 {
+      --bs-gutter-x: 30px; } }
+  
+  @media only screen and (min-width: 1400px) {
+    .gap-35 {
+      --bs-gutter-x: 35px; } }
+  
+  @media only screen and (min-width: 1400px) {
+    .gap-40 {
+      --bs-gutter-x: 40px; } }
+  
+  @media only screen and (min-width: 1400px) {
+    .gap-45 {
+      --bs-gutter-x: 45px; } }
+  
+  @media only screen and (min-width: 1400px) {
+    .gap-50 {
+      --bs-gutter-x: 50px; } }
+  
+  @media only screen and (min-width: 1400px) {
+    .gap-55 {
+      --bs-gutter-x: 55px; } }
+  
+  @media only screen and (min-width: 1400px) {
+    .gap-60 {
+      --bs-gutter-x: 60px; } }
+  
+  @media only screen and (min-width: 1400px) {
+    .gap-65 {
+      --bs-gutter-x: 65px; } }
+  
+  @media only screen and (min-width: 1400px) {
+    .gap-70 {
+      --bs-gutter-x: 70px; } }
+  
+  @media only screen and (min-width: 1400px) {
+    .gap-75 {
+      --bs-gutter-x: 75px; } }
+  
+  @media only screen and (min-width: 1400px) {
+    .gap-80 {
+      --bs-gutter-x: 80px; } }
+  
+  @media only screen and (min-width: 1400px) {
+    .gap-85 {
+      --bs-gutter-x: 85px; } }
+  
+  @media only screen and (min-width: 1400px) {
+    .gap-90 {
+      --bs-gutter-x: 90px; } }
+  
+  @media only screen and (min-width: 1400px) {
+    .gap-95 {
+      --bs-gutter-x: 95px; } }
+  
+  @media only screen and (min-width: 1400px) {
+    .gap-100 {
+      --bs-gutter-x: 100px; } }
+  
+  @media only screen and (min-width: 1400px) {
+    .gap-105 {
+      --bs-gutter-x: 105px; } }
+  
+  @media only screen and (min-width: 1400px) {
+    .gap-110 {
+      --bs-gutter-x: 110px; } }
+  
+  @media only screen and (min-width: 1400px) {
+    .gap-115 {
+      --bs-gutter-x: 115px; } }
+  
+  @media only screen and (min-width: 1400px) {
+    .gap-120 {
+      --bs-gutter-x: 120px; } }
+  
+  @media only screen and (min-width: 1400px) {
+    .gap-125 {
+      --bs-gutter-x: 125px; } }
+  
+  @media only screen and (min-width: 1400px) {
+    .gap-130 {
+      --bs-gutter-x: 130px; } }
+  
+  @media only screen and (min-width: 1400px) {
+    .gap-135 {
+      --bs-gutter-x: 135px; } }
+  
+  @media only screen and (min-width: 1400px) {
+    .gap-140 {
+      --bs-gutter-x: 140px; } }
+  
+  @media only screen and (min-width: 1400px) {
+    .gap-145 {
+      --bs-gutter-x: 145px; } }
+  
+  @media only screen and (min-width: 1400px) {
+    .gap-150 {
+      --bs-gutter-x: 150px; } }
+  
+  @media only screen and (min-width: 1200px) {
+    .row-cols-xl-7 > * {
+      width: 14.2857%;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+      flex: 0 0 auto; } }
+  
+  @media only screen and (max-width: 375px) {
+    .col-small {
+      width: 100%; } }
