@@ -5,6 +5,7 @@
   * Author URI: http://www.themesflat.com
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
 @import url("https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css");
@@ -543,6 +544,7 @@ input[type="color"],
 
 /* Page Title
 -------------------------------------------------------------- */
+
 .page-title {
 	padding-bottom: 70px;
 	position: relative;
@@ -550,9 +552,6 @@ input[type="color"],
 
 .page-title .page-title-heading .title {
 	margin-bottom: 30px;
-}
-
-.page-title .breadcrumbs {
 }
 
 .page-title .breadcrumbs ul {
@@ -591,7 +590,8 @@ input[type="color"],
 
 /* Blog Posts
 -------------------------------------------------------------- */
-.blog-list-area {
+
+.main-post-area {
 	margin-bottom: 100px;
 }
 
@@ -600,95 +600,286 @@ input[type="color"],
 }
 
 .widget-wrap {
-	background-color: #131037;
-	border-radius: 12px;
-	margin-bottom: 30px;
+    margin-bottom: 30px;
 }
 
-.widget-item {
-	padding: 30px;
+/* Title */
+
+.post .title-post h2 {
+    font-size: 30px;
+    font-weight: 759;
 }
 
-.widget-item .image img {
-	margin-bottom: 30px;
+.post .title-post ul {
+    float: left;
 }
 
-.post-list-content h4 a {
-	font-size: 24px;
-	font-weight: 900;
-	margin-bottom: 10px;
+.post .title-post ul li {
+    float: left;
+    padding: 0 16px 0 12px;
 }
 
-.post-list-content ul {
-	display: flex;
-	align-items: center;
-	margin-bottom: 30px;
+.post .title-post ul li a {
+    padding: 0 10px;
 }
 
-.post-list-content ul .name {
-	padding: 0 20px;
-	color: #FE8C45;
-	position: relative;
+.post .title-post ul li:nth-child(1) a,
+.post .title-post ul li:nth-child(2) a {
+    position: relative;
+    color: #FE8C45;
+    font-weight: 400;
 }
 
-.post-list-content ul .name::after {
-	content: "";
+.post .title-post ul li:nth-child(3) a,
+.post .title-post ul li:nth-child(4) a {
+    position: relative;
+    color: #7791BA;
+    font-weight: 400;
+}
+
+.post .title-post ul li:nth-child(1) a::after,
+.post .title-post ul li:nth-child(2) a::after,
+.post .title-post ul li:nth-child(3) a::after,
+.post .title-post ul li:nth-child(4) a::after {
+    content: "";
+	position: absolute;
+	height: 16px;
+	width: 16px;
+	top: 0px;
+	left: -10px;
+}
+
+.post .title-post ul li:nth-child(1) a::after {
+	background-image: url(../images/icon/author.png);
+}
+
+.post .title-post ul li:nth-child(2) a::after {
 	background-image: url(../images/icon/folder.png);
-	position: absolute;
-	height: 15px;
-	width: 15px;
-	top: 5px;
-	left: 0px;
 }
 
-.post-list-content ul .time {
-	color: #7791BA;
+.post .title-post ul li:nth-child(3) a::after {
+	background-image: url(../images/icon/comment.png);
 }
 
-.post-list-content ul .time::after {
-	content: "";
-	background-image: url(../images/icon/Line.png);
-	position: absolute;
-	height: 15px;
-	width: 1px;
-	top: 492px;
-	left: 167px;
+.post .title-post ul li:nth-child(4) a::after {
+	background-image: url(../images/icon/calendar.png);
 }
 
-/* Pagination */
+/* Image */
 
-.pagination {
-	display: flex;
-	justify-content: center;
-	padding-top: 30px;
-	border-top: 1px solid #7791BA;
+.post .image {
+    padding-top: 60px;
 }
 
-.pagination ul {
-	display: flex;
+.post .image h6 {
+    border-top: 1px solid #7791BA;
+    padding-top: 30px;
+    font-weight: 550;
+    font-size: 16px;
 }
 
-.pagination ul li a{
-	border-radius: 10px;
-	color: #FFFFFF;
-	background-color: transparent;
-	border: 1px solid #7791BA;
+.post .image img {
+    margin-bottom: 14px;
+}
+
+.post .image p.note-image {
+    font-size: 12px;
+    font-weight: 400;
+    font-family: "Rubik", sans-serif;
+    line-height: 16.8;
+    text-transform: uppercase;
+}
+
+/* Text Post */
+.text-post {
+    border-bottom: 1px solid #7791BA;
+}
+
+.text-post p {
+    font-size: 16px;
+    line-height: 22.4px;
+    margin-bottom: 20px;
+}
+
+.text-post p:last-child {
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 22.4px;
+}
+
+.text-post .quote {
+    background-color: #131037;
+    border-radius: 10px;
+    border-left: 4px solid #FE8C45;
+    margin-bottom: 20px;
+}
+
+.text-post .quote .para {
+    padding: 30px 30px 10px 30px;
+}
+
+/* Tag Share Post */
+
+.tag-share-post {
+    padding-top: 20px;
+    margin-bottom: 50px;
+}
+
+.tag-share-post .tag-post,
+.tag-share-post .share-post,
+.tag-share-post .tag-post li,
+.tag-share-post .share-post li{
+    float: left;
+}
+
+.tag-share-post .tag-post {
+    padding-right: 168px;
+}
+
+.tag-share-post .tag-post li:not(:first-child):hover{
+	background: #adaff7;
+}
+
+.tag-share-post .share-post li:not(:first-child) a:hover{
+	background: #adaff7;
+	color: #007bff;
+}
+
+.tag-share-post .tag-post li:first-child,
+.tag-share-post .share-post li:first-child {
+    padding: 8px 0;
+}
+
+.tag-share-post .tag-post li:not(:first-child){
+    padding: 8px 17px;
+    border: 1px solid #7791BA;
+    border-radius: 999px;
+    margin-left: 9px;
+}
+
+.tag-share-post .share-post li:not(:first-child) {
+    padding-left: 8px;
+}
+
+.tag-share-post .share-post li:not(:first-child) a{
+    color: #FFFFFF;
+	background-color: #273244;
 	height: 44px;
 	width: 44px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+    border-radius: 50%;
 }
 
-.pagination ul li a:hover {
+/* Comment */
+
+.comment {
+    padding-top: 50px;
+	margin-bottom: 50px;
+}
+
+.comment h4 {
+    font-weight: 759;
+    margin-bottom: 12px;
+    line-height: 31.75px;
+}
+
+.comment ul li {
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 0;
+}
+
+.comment ul li .author-thumb {
+	padding-right: 14px;
+}
+
+.comment ul li .author-thumb img {
+	max-width: 50px;
+	max-height: 50px;
+}
+
+.comment ul li .comment-content h6 {
+	font-weight: 645;
+	margin-bottom: 18px;
+}
+
+.comment ul li .comment-content p {
+	margin-bottom: 18px;
+}
+
+.comment ul li .comment-content ul li {
+	display: inline-flex;
+	padding-left: 25px;
+	position: relative;
+}
+
+.comment ul li .comment-content ul li:nth-child(1) a::after {
+	content: "";
+	height: 18px;
+	width: 18px;
+	background-image: url(../images/icon/like.png);
+	position: absolute;
+	bottom: 20px;
+	left: 0px;
+}
+
+.comment ul li .comment-content ul li:nth-child(2) a::after {
+	content: "";
+	height: 18px;
+	width: 18px;
+	background-image: url(../images/icon/dislike.png);
+	position: absolute;
+	bottom: 20px;
+	left: 0px;
+}
+
+/* Leave comment */
+
+.leave_comment h4 {
+	line-height: 31.5px;
+	margin-bottom: 20px;
+}
+
+.leave_comment form {
+	margin-top: 20px;
+}
+
+.leave_comment .row .main-comment {
+	margin-bottom: 30px;
+}
+
+.leave_comment .row .main-comment h6 {
+	margin-bottom: 10px;
+	font-size: 14px;
+	font-weight: 550;
+}
+
+.leave_comment .row .main-comment .form-group input,
+.leave_comment .row .main-comment .form-group textarea {
+	background-color: rgba(147, 172, 211, 0.07);
+	border: rgba(147, 172, 211, 0.1);
+	border-radius: 16px;
+}
+
+.leave_comment .row .form-group button {
+	padding: 14px 25px 14px 25px;
+	background: linear-gradient(274.33deg, #FE8C45 2.74%, #CA2826 103%);
+	border-radius: 999px;
+	text-align: center;
+}
+
+.leave_comment .row .form-group button a {
+	padding-right: 10px;
+}
+
+.leave_comment .row .form-group button:hover {
 	background: #adaff7;
-	color: #007bff;
 }
-
-.pagination ul li {
-	padding: 0 10px;
+.leave_comment .row .form-group button a i {
+	text-align: center;
 }
-
 /* Sidebar Posts
 -------------------------------------------------------------- */
 .widget-sidebar {

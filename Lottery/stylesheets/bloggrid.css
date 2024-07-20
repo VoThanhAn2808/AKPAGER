@@ -543,6 +543,7 @@ input[type="color"],
 
 /* Page Title
 -------------------------------------------------------------- */
+
 .page-title {
 	padding-bottom: 70px;
 	position: relative;
@@ -550,9 +551,6 @@ input[type="color"],
 
 .page-title .page-title-heading .title {
 	margin-bottom: 30px;
-}
-
-.page-title .breadcrumbs {
 }
 
 .page-title .breadcrumbs ul {
@@ -589,70 +587,66 @@ input[type="color"],
 	left: 40px;
 }
 
-/* Blog Posts
+/* Blog Grid Posts
 -------------------------------------------------------------- */
-.blog-list-area {
-	margin-bottom: 100px;
+
+.blog-grid-area {
+    margin-bottom: 100px;
 }
 
 .widget-overall {
-	padding-top: 100px;
+    padding-top: 100px;
+    margin-bottom: 30px;
 }
 
 .widget-wrap {
-	background-color: #131037;
-	border-radius: 12px;
-	margin-bottom: 30px;
+    margin-bottom: 30px;
 }
 
-.widget-item {
-	padding: 30px;
+.widget-wrap .image img {
+    margin-bottom: 20px;
+    width: 100%;
+    height: auto;
 }
 
-.widget-item .image img {
-	margin-bottom: 30px;
+.widget-wrap .post-grid-content ul {
+    display: flex;
+    justify-content: center;
 }
 
-.post-list-content h4 a {
-	font-size: 24px;
-	font-weight: 900;
-	margin-bottom: 10px;
-}
-
-.post-list-content ul {
-	display: flex;
-	align-items: center;
-	margin-bottom: 30px;
-}
-
-.post-list-content ul .name {
-	padding: 0 20px;
-	color: #FE8C45;
+.widget-wrap .post-grid-content ul li.name {
+    padding-right: 20px;
+    color: #FE8C45;
 	position: relative;
 }
 
-.post-list-content ul .name::after {
+.widget-wrap .post-grid-content ul .name::after {
 	content: "";
 	background-image: url(../images/icon/folder.png);
 	position: absolute;
 	height: 15px;
 	width: 15px;
 	top: 5px;
-	left: 0px;
+	left: -20px;
 }
 
-.post-list-content ul .time {
+.widget-wrap .post-grid-content ul .time {
 	color: #7791BA;
+    position: relative;
 }
 
-.post-list-content ul .time::after {
+.widget-wrap .post-grid-content ul .time::after {
 	content: "";
 	background-image: url(../images/icon/Line.png);
 	position: absolute;
 	height: 15px;
 	width: 1px;
-	top: 492px;
-	left: 167px;
+	top: 7px;
+	left: -9px;
+}
+
+.widget-wrap .post-grid-content h4 a {
+    font-size: 18px;
 }
 
 /* Pagination */
@@ -687,129 +681,6 @@ input[type="color"],
 
 .pagination ul li {
 	padding: 0 10px;
-}
-
-/* Sidebar Posts
--------------------------------------------------------------- */
-.widget-sidebar {
-	margin-bottom: 40px;
-}
-
-/* Sidebar */
-
-.sidebar-blog h6 {
-	font-weight: 645;
-	margin-bottom: 25px;
-}
-
-.sidebar-blog-search {
-	margin-bottom: 10px;
-}
-
-.sidebar-blog-search form input{
-	background-color: #FFFFFF;
-	border-radius: 50px;
-}
-
-.sidebar-blog-search form input::placeholder {
-	padding-left: 15px;
-}
-
-.sidebar-blog-search form i::after {
-	content: "";
-	display: inline-block;
-	background-image: url(../images/icon/search.png);
-	background-size: cover;
-	background-position: center;
-	height: 13px;
-	width: 13px;
-	transform: translate(20px, -42px);
-}
-
-/* Categories */
-
-.sidebar-blog-categories ul li {
-	display: flex;
-	justify-content: space-between;
-	padding: 10px 0;
-}
-
-/* Featured Listings */
-
-.sidebar-blog-featured ul li {
-	display: flex;
-	border-top: 1px solid #535860;
-	padding-top: 20px;
-}
-
-.sidebar-blog-featured .image img{
-	flex: none;
-	max-width: 112px;
-	margin-right: 10px;
-}
-
-.sidebar-blog-featured .content p a {
-	font-weight: 550;
-}
-
-.sidebar-blog-featured span {
-	font-size: 12px;
-	font-weight: 400;
-	line-height: 16.8px;
-	color: #7791BA;
-	padding-left: 15px;
-}
-
-.sidebar-blog-featured span::before {
-	content: "";
-	width: 17px;
-	height: 17px;
-	position: absolute;
-	background-image: url(../images/icon/calendar.png);
-	background-size: cover;
-	background-position: center;
-	transform: translate(-20px, 7px);
-}
-
-/* Newsletter */
-
-.sidebar-blog-newsletter p {
-	margin-bottom: 20px;
-}
-
-.sidebar-blog-newsletter form input {
-	background-color: #FFFFFF;
-	border-radius: 50px;
-}
-
-.sidebar-blog-newsletter form i::after {
-	content: "";
-	display: inline-block;
-	background-image: url(../images/icon/send.png);
-	background-size: cover;
-	background-position: center;
-	height: 13px;
-	width: 13px;
-	transform: translate(260px, -44px);
-}
-
-/* Popular */
-
-.sidebar-blog-popular .tag-could {
-	display: flex;
-	flex-wrap: wrap;
-	margin: 0 -5px 0;
-}
-
-.sidebar-blog-popular .tag-could a {
-	padding: 12px 14px;
-	margin: 10px 10px 0;
-	border: 1px solid #535860;
-	border-radius: 99px;
-}
-
-.sidebar-blog-popular .tag-could a:hover {
-	background: #adaff7;
 }
 
 /* Download
