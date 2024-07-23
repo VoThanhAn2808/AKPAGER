@@ -405,11 +405,11 @@ input[type="color"],
 }
 
 .span-line-bottom {
-	border-bottom: 1px solid #7791BA;
+	border-bottom: 1px solid rgb(105, 105, 105, 0.4);
 }
 
 .span-line-top {
-	border-top: 1px solid #7791BA;
+	border-top: 1px solid rgb(105, 105, 105, 0.4);
 }
 
 /* Header
@@ -417,7 +417,7 @@ input[type="color"],
 
 .header {
 	/* max-width: 1920px; */
-	border-bottom: 1px solid #FFFFFF;
+	border-bottom: 1px solid rgb(105, 105, 105, 0.4);
 	position: relative;
 	margin-bottom: 70px;
 }
@@ -437,7 +437,7 @@ input[type="color"],
 }
 
 .header-inner .logo {
-	padding: 6px 117px 20px 20px;
+	padding: 22px 117px 22px 20px;
 }
 
 /* navigation */
@@ -468,7 +468,7 @@ input[type="color"],
 
 #mainnav > ul > li {
 	float: left;
-	padding: 19px 28px 20px 6px;
+	padding: 35px 28px 35px 6px;
 }
 
 #mainnav > ul > li > a {
@@ -484,7 +484,7 @@ input[type="color"],
 	position: absolute;	
 	z-index: 9999;
 	left: 0; 
-	top: 119%;	
+	top: 101%;	
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
        opacity: 0;
         filter: alpha(opacity=0); 
@@ -516,14 +516,14 @@ input[type="color"],
 /* menu btn */
 
 .header-inner .menu-btn {
-	margin: 20px 0 0 0;
+	margin: 35px 0 0 0;
 	gap: 10px;
 	position: relative;
 }
 
 .header-inner .menu-btn a {
 	line-height: 21.17px;
-	padding: 14px 20px 14px 50px;
+	padding: 15px 21px 15px 51px;
 	background: linear-gradient(274.33deg, #FE8C45 2.74%, #CA2826 103%);
 	border-radius: 999px;
 }
@@ -672,7 +672,7 @@ input[type="color"],
 }
 
 .post .image h6 {
-    border-top: 1px solid #7791BA;
+    border-top: 1px solid rgba(107, 112, 182, 0.4);
     padding-top: 30px;
     font-weight: 550;
     font-size: 16px;
@@ -692,7 +692,7 @@ input[type="color"],
 
 /* Text Post */
 .text-post {
-    border-bottom: 1px solid #7791BA;
+    border-bottom: 1px solid rgba(107, 112, 182, 0.4);
 }
 
 .text-post p {
@@ -752,7 +752,7 @@ input[type="color"],
 
 .tag-share-post .tag-post li:not(:first-child){
     padding: 8px 17px;
-    border: 1px solid #7791BA;
+    border: 1px solid rgba(107, 112, 182, 0.4);
     border-radius: 999px;
     margin-left: 9px;
 }
@@ -859,38 +859,43 @@ input[type="color"],
 .leave_comment .row .main-comment .form-group input,
 .leave_comment .row .main-comment .form-group textarea {
 	background-color: rgba(147, 172, 211, 0.07);
-	border: rgba(147, 172, 211, 0.1);
+	border: 1px solid rgba(147, 172, 211, 0.1);
 	border-radius: 16px;
 }
 
-.leave_comment .row .form-group button {
-	padding: 14px 25px 14px 25px;
+.leave_comment .form-group .menu-btn {
+	gap: 10px;
+	position: relative;
+}
+
+.leave_comment .form-group .menu-btn a {
+	line-height: 21.17px;
+	padding: 15px 65px 15px 41px;
 	background: linear-gradient(274.33deg, #FE8C45 2.74%, #CA2826 103%);
 	border-radius: 999px;
-	text-align: center;
+	position: relative;
 }
 
-.leave_comment .row .form-group button a {
-	padding-right: 10px;
+.leave_comment .form-group .menu-btn a::after {
+	content: "";
+	background-image: url(../images/icon/rightwhite.png);
+	position: absolute;
+	height: 14px;
+	width: 13px;
+	top: 17px;
+	right: 40px;
 }
 
-.leave_comment .row .form-group button:hover {
+.leave_comment .form-group .menu-btn a:hover {
 	background: #adaff7;
-}
-.leave_comment .row .form-group button a i {
-	text-align: center;
 }
 /* Sidebar Posts
 -------------------------------------------------------------- */
-.widget-sidebar {
-	margin-bottom: 40px;
-}
-
 /* Sidebar */
 
-.sidebar-blog h6 {
+.sidebar-blog-search h6 {
 	font-weight: 645;
-	margin-bottom: 25px;
+	margin-bottom: 24px;
 }
 
 .sidebar-blog-search {
@@ -919,18 +924,40 @@ input[type="color"],
 
 /* Categories */
 
+.sidebar-blog-categories {
+	margin-bottom: 40px;
+}
+
+.sidebar-blog-categories h6 {
+	font-weight: 645;
+	margin-bottom: 20px;
+}
+
 .sidebar-blog-categories ul li {
 	display: flex;
 	justify-content: space-between;
 	padding: 10px 0;
 }
 
+.sidebar-blog-categories ul li a:not(:first-child) {
+	color: #7791BA;
+}
 /* Featured Listings */
+
+.sidebar-blog-featured {
+	margin-bottom: 10px;
+}
+
+.sidebar-blog-featured h6 {
+	font-weight: 645;
+	margin-bottom: 20px;
+}
 
 .sidebar-blog-featured ul li {
 	display: flex;
-	border-top: 1px solid #535860;
+	border-top: 1px solid rgba(107, 112, 182, 0.4);
 	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 .sidebar-blog-featured .image img{
@@ -964,6 +991,12 @@ input[type="color"],
 
 /* Newsletter */
 
+.sidebar-blog-newsletter h6 {
+	font-weight: 645;
+	/* line-height: 23.81px; */
+	margin-bottom: 20px;
+}
+
 .sidebar-blog-newsletter p {
 	margin-bottom: 20px;
 }
@@ -986,6 +1019,11 @@ input[type="color"],
 
 /* Popular */
 
+.sidebar-blog-popular h6 {
+	font-weight: 645;
+	margin-bottom: 20px;
+}
+
 .sidebar-blog-popular .tag-could {
 	display: flex;
 	flex-wrap: wrap;
@@ -995,8 +1033,9 @@ input[type="color"],
 .sidebar-blog-popular .tag-could a {
 	padding: 12px 14px;
 	margin: 10px 10px 0;
-	border: 1px solid #535860;
+	border: 1px solid rgba(107, 112, 182, 0.4);
 	border-radius: 99px;
+	color: #7791BA;
 }
 
 .sidebar-blog-popular .tag-could a:hover {
@@ -1099,7 +1138,7 @@ input[type="color"],
 /* Main Footer */
 
 .main-footer {
-	border-top: 1px solid #535860;
+	border-top: 1px solid rgba(107, 112, 182, 0.4);
 	margin-bottom: 46px;
 }
 
@@ -1155,29 +1194,38 @@ input[type="color"],
 	color: #007bff;
 }
 
-.main-content-menu button {
-	text-align: center;
+.main-content-menu .menu-btn {
+	gap: 10px;
+	position: relative;
+	margin-top: 18px;
+	margin-bottom: 26px;
+}
+
+.main-content-menu .menu-btn a {
+	line-height: 21.17px;
+	padding: 15px 65px 15px 41px;
 	background: linear-gradient(274.33deg, #FE8C45 2.74%, #CA2826 103%);
 	border-radius: 999px;
-	padding: 14.5px  41.5px ;
-	margin-bottom: 32px;
+	position: relative;
 }
 
-.main-content-menu button:hover {
+.main-content-menu .menu-btn a::after {
+	content: "";
+	background-image: url(../images/icon/rightwhite.png);
+	position: absolute;
+	height: 14px;
+	width: 13px;
+	top: 17px;
+	right: 40px;
+}
+
+.main-content-menu .menu-btn a:hover {
 	background: #adaff7;
-}
-
-.main-content-menu button a.theme-btn {
-	padding-right: 10px;
-}
-
-.main-content-menu button a i {
-	text-align: center;
 }
 
 /* End Footer */
 .end-footer {
-	border-top: 1px solid #535860;
+	border-top: 1px solid rgba(107, 112, 182, 0.4);
 }
 
 .end-menu {
