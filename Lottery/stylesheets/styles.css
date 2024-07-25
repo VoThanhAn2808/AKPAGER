@@ -903,12 +903,6 @@ input[type="color"],
     margin-top: -45px;
 } */
 
-@media only screen and (min-width: 1199px){
-	.section-started .image {
-        margin-top: -70px;
-    }
-}
-
 /* @media only screen and (min-width: 767px) and (max-width: 991){
 	.section-started .image {
         margin-top: ;
@@ -923,11 +917,11 @@ input[type="color"],
     position: relative;
 }
 
-.section-game .header-game {
+.section-game .header-card {
     margin-bottom: 40px;
 }
 
-.section-game .header-game .header-title {
+.section-game .header-card .header-title {
     font-size: 50px;
     line-height: 66px;
 }
@@ -992,4 +986,14 @@ input[type="color"],
     height: 46px;
 }
 
-
+.section-started .widget-btn .form-control::after {
+    content: "";
+    background-image: url(../images/icon/search.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    top: 15px;
+    right: 15px;
+}
