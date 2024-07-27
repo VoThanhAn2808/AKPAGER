@@ -3,4 +3,14 @@
     --main-color: rgba(254, 140, 69, 1);
     --white-color: #FFFFFF;
     --black-color: #000000;
+    --bg-darkblue-color: rgba(6, 6, 35, 1);
+    --bg-lightblue-color: rgba(15, 12, 48, 1);
+}
+
+.bg-darkblue{
+    background-color: var(--bg-darkblue-color);
+}
+
+.bg-lightblue {
+    background-color: var(--bg-lightblue-color);
 }
